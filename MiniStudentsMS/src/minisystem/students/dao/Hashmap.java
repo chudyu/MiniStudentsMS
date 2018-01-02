@@ -1,10 +1,13 @@
-package minisystem.students.basic;
+package minisystem.students.dao;
 
+import java.util.Collection;
 import java.util.HashMap;
 
-public class Database {
+import minisystem.students.model.Student;
 
-    HashMap<String, Student> map; 
+public class Hashmap implements IDatabase {
+
+    HashMap<String, Student> map;
     
     public void initDB(){
     	if(this.map == null) {
@@ -32,12 +35,8 @@ public class Database {
 		return map.replace(student.getID(), student);
 	}
 	
-	public void testStub() {
-		this.initDB();
-        Student s1=new Student("103001", "张三", 19, Gender.Female);
-        Student s2=new Student("103005", "李四", 20, Gender.Female);
-        map.put(s1.getID(), s1);
-        map.put(s2.getID(), s2);
+	public Collection<Student> getAll() {
+		return map.values();
 	}
 
 }

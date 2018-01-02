@@ -1,4 +1,4 @@
-package minisystem.students.basic;
+package minisystem.students.model;
 
 public class Student {
 	

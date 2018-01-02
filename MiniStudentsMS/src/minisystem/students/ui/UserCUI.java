@@ -1,7 +1,10 @@
 package minisystem.students.ui;
 
 import java.util.Scanner;
-import minisystem.students.basic.*;
+
+import minisystem.students.model.Gender;
+import minisystem.students.model.Student;
+import minisystem.students.service.*;
 
 public class UserCUI {
 

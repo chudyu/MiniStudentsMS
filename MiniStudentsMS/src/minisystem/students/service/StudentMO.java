@@ -1,11 +1,15 @@
-package minisystem.students.basic;
+package minisystem.students.service;
+
+import minisystem.students.dao.Hashmap;
+import minisystem.students.dao.IDatabase;
+import minisystem.students.model.*;
 
 public class StudentMO {
 	
-	private Database db;
+	private IDatabase db;
 	
 	public StudentMO() {
-		db = new Database();
+		db = new Hashmap();
 		db.initDB();
 	}
 	
@@ -53,16 +57,9 @@ public class StudentMO {
 	}
 	
 	public void listAllStudents(){
-		for(Student student:db.map.values()) {
+		for(Student student:db.getAll()) {
 			System.out.println(student.toString());
 		}
 	}
 	
-//	public static void main(String[] args) {
-//		StudentMO mo = new StudentMO();
-//		mo.addStudent("104008", "老王", 66, Gender.Male);
-//		mo.addStudent("106A16", "小周", 20, Gender.Male);
-//		mo.addStudent("106A16", "小周", 20, Gender.Male);
-//		mo.listAllStudents();
-//	}
 }
