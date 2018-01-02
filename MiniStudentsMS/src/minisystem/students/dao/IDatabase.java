@@ -2,7 +2,7 @@ package minisystem.students.dao;
 
 import java.util.Collection;
 
-import minisystem.students.model.Student;
+import minisystem.students.entity.Student;
 
 public interface IDatabase {
 

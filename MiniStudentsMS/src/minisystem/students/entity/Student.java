@@ -1,4 +1,4 @@
-package minisystem.students.model;
+package minisystem.students.entity;
 
 public class Student {
 	
