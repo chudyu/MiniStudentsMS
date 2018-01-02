@@ -2,18 +2,18 @@ package minisystem.students.ui;
 
 import java.util.Scanner;
 
-import minisystem.students.entity.Gender;
-import minisystem.students.entity.Student;
+import minisystem.students.pojo.Gender;
+import minisystem.students.pojo.Student;
 import minisystem.students.service.*;
 
 public class UserCUI {
 
 	static Scanner scanner = new Scanner(System.in);
-	static StudentMO smo = null;
+	static StudentManage smo = null;
 
 	public static void init() {
 
-		smo = new StudentMO();
+		smo = new StudentManage();
 
 		// test
 		Student s1 = new Student("103001", "ÕÅÈı", 19, Gender.Female);

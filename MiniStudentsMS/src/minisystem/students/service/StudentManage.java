@@ -2,13 +2,13 @@ package minisystem.students.service;
 
 import minisystem.students.dao.Hashmap;
 import minisystem.students.dao.IDatabase;
-import minisystem.students.entity.*;
+import minisystem.students.pojo.*;
 
-public class StudentMO {
+public class StudentManage {
 	
 	private IDatabase db;
 	
-	public StudentMO() {
+	public StudentManage() {
 		db = new Hashmap();
 		db.initDB();
 	}

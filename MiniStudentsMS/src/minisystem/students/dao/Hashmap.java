@@ -3,7 +3,7 @@ package minisystem.students.dao;
 import java.util.Collection;
 import java.util.HashMap;
 
-import minisystem.students.entity.Student;
+import minisystem.students.pojo.Student;
 
 public class Hashmap implements IDatabase {
 

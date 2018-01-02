@@ -1,4 +1,4 @@
-package minisystem.students.entity;
+package minisystem.students.pojo;
 
 public class Student {
 	
