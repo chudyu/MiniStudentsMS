@@ -1,4 +1,4 @@
-package minisystem.students.pojo;
+package minisystem.students.bean;
 
 public enum Gender {
 	Male,

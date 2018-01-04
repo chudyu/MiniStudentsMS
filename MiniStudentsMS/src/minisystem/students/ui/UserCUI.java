@@ -2,8 +2,8 @@ package minisystem.students.ui;
 
 import java.util.Scanner;
 
-import minisystem.students.pojo.Gender;
-import minisystem.students.pojo.Student;
+import minisystem.students.bean.Gender;
+import minisystem.students.bean.Student;
 import minisystem.students.service.*;
 
 public class UserCUI {
