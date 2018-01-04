@@ -5,11 +5,12 @@ import java.util.Scanner;
 import minisystem.students.bean.Gender;
 import minisystem.students.bean.Student;
 import minisystem.students.service.*;
+import minisystem.students.service.impl.StudentManage;
 
 public class UserCUI {
 
 	static Scanner scanner = new Scanner(System.in);
-	static StudentManage smo = null;
+	static IStudentManage smo = null;
 
 	public static void init() {
 
